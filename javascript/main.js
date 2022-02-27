@@ -7,23 +7,53 @@ data1 = [{
 }
 ]
 
-function item(a)
+// function item(a)
+// {
+//     for(var i=0; i< data1.length ; i++)
+//     {
+//     if(a == i)
+//     {
+//         document.getElementById("id").innerHTML = data1.id;
+//         document.getElementById("name").innerHTML = data1.name;
+//         document.getElementById("ram").innerHTML = data1.
+//         document.getElementById("ssd").innerHTML
+//         document.getElementById("cpu").innerHTML
+//     }
+// }
+addedcart(itemid, itemname, price,ram, ssd, cpu)
 {
-    for(var i=0; i< data1.length ; i++)
-    {
-    if(a == i)
-    {
-        document.getElementById("id").innerHTML = data1.id;
-        document.getElementById("name").innerHTML = data1.name;
-        document.getElementById("ram").innerHTML = data1.
-        document.getElementById("ssd").innerHTML
-        document.getElementById("cpu").innerHTML
-    }
+    document.getElementById("itemid").innerHTML = itemid;
+    document.getElementById("name").innerHTML = itemname;
+    document.getElementById("price").innerHTML = price;
+    document.getElementById("ram").innerHTML = ram;
+    document.getElementById("ssd").innerHTML = ssd;
+    document.getElementById("cpu").innerHTML = cpu;
+
+
+
 }
 
-var counter = 0;
-function added()
+function myfunction0()
 {
-   document.getElementById("showcounter").innerHTML = counter++; 
+    location.replace("C:/frontend/Extra/weekendworks-sanjay-raytex-initial/html/main.html");
 }
+function myfunction1()
+{
+    location.replace("C:/frontend/Extra/weekendworks-sanjay-raytex-initial/html/addedcart.html");
 }
+function myfunction2()
+{
+    location.replace("C:/frontend/Extra/weekendworks-sanjay-raytex-initial/html/devices.html");
+}
+function myfunction3()
+{
+    location.replace("C:/frontend/Extra/weekendworks-sanjay-raytex-initial/html/login .html");   
+}
+
+
+// var counter = 0;
+// function added()
+// {
+//    document.getElementById("showcounter").innerHTML = counter++; 
+// }
+// }
