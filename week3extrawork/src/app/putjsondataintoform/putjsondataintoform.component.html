@@ -1,1 +1,43 @@
-<p>putjsondataintoform works!</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<h4>Fetch jason data from selfmade json file</h4>
+<ul *ngFor="let d of htdata">
+    <li>
+        {{d.id}}
+        {{d.name}}
+        {{d.username}}
+        {{d.email}}
+        {{d.address}}
+        {{d.phone}}
+        {{d.website}}
+        {{d.company}}
+    </li>
+</ul> 
+
+<h4> Fetch data from json and put in form</h4>
+<div class="container">
+    <label>ID: </label>
+    <input type="number" [(ngModel)] = "id"><br>
+
+    <label>Name: </label>
+    <input type="text" [(ngModel)] = "name" placeholder={{name}}><br>
+
+    <label>username: </label>
+    <input type="text" [(ngModel)] = "username" placeholder={{username}}><br>
+
+    <label>Email No: </label>
+    <input type="email" [(ngModel)] ="email" placeholder={{email}}><br>
+  
+    <label>Address: </label>
+    <input type="text" [(ngModel)] = "address" placeholder={{address}}><br>
+  
+    <label>Phone: </label>
+    <input type="number" [(ngModel)] = "phone" placeholder={{phone}}><br>
+
+    <label>website: </label>
+    <input type="text" [(ngModel)] = "website" placeholder={{website}}><br>
+
+    <label>company: </label>
+    <input type="text" [(ngModel)] = "company" placeholder={{company}}><br>
+
+    <button type="submit" class="btn btn-primary" (click)="showdatatoform(id)">Get</button>
+</div>

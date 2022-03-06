@@ -5,8 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveformmoduleComponent } from './reactiveformmodule/reactiveformmodule.component';
@@ -22,9 +20,10 @@ import { PutjsondataintoformComponent } from './putjsondataintoform/putjsondatai
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent,HttpClientModule]
+  bootstrap: [AppComponent,HttpClientModule,PutjsondataintoformComponent]
 })
 export class AppModule { }
